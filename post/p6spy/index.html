@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Image Preview - 午龙的博客</title>
+  <title>使用P6Spy格式化SQL输出 - 午龙的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -22,11 +22,8 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="午龙" />
-  <meta name="description" content="Thanks for liwenyip/hugo-easy-gallery &amp;amp; Zebradil · Pull Request #48 .
-Now, we could use {{&amp;lt; gallery &amp;gt;}} shortcode in hugo-theme-jane.
-Normal Image This is an image in static/image folder.
-![This is an image in `static/image` folder.](/image/example.jpg) " />
+<meta name="author" content="wulong" />
+  <meta name="description" content="引言 在使用mybatis过程中，原生输出的SQL是带？的，在需要复制到其他地方执行的时候，需要一个一个参数进行替换，如：select * from user where" />
 
   <meta name="keywords" content="午龙, Java, 技术" />
 
@@ -38,7 +35,7 @@ Normal Image This is an image in static/image folder.
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://xiehuading.github.io/post/image-preview/" />
+<link rel="canonical" href="https://xiehuading.github.io/post/p6spy/" />
 
 
 
@@ -60,54 +57,27 @@ Normal Image This is an image in static/image folder.
 
 
 
-<meta property="og:title" content="Image Preview" />
-<meta property="og:description" content="Thanks for liwenyip/hugo-easy-gallery &amp; Zebradil · Pull Request #48 .
-
-Now, we could use {{&lt; gallery &gt;}} shortcode in hugo-theme-jane.
-
-Normal Image
-
-This is an image in static/image folder.
-
-![This is an image in `static/image` folder.](/image/example.jpg)
-" />
+<meta property="og:title" content="使用P6Spy格式化SQL输出" />
+<meta property="og:description" content="引言 在使用mybatis过程中，原生输出的SQL是带？的，在需要复制到其他地方执行的时候，需要一个一个参数进行替换，如：select * from user where" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xiehuading.github.io/post/image-preview/" />
-<meta property="article:published_time" content="2018-03-03T16:01:23&#43;08:00"/>
-<meta property="article:modified_time" content="2018-03-04T16:01:23&#43;08:00"/>
+<meta property="og:url" content="https://xiehuading.github.io/post/p6spy/" />
+<meta property="article:published_time" content="2018-01-01T16:01:23&#43;08:00"/>
+<meta property="article:modified_time" content="2018-03-07T16:01:23&#43;08:00"/>
 
-<meta itemprop="name" content="Image Preview">
-<meta itemprop="description" content="Thanks for liwenyip/hugo-easy-gallery &amp; Zebradil · Pull Request #48 .
-
-Now, we could use {{&lt; gallery &gt;}} shortcode in hugo-theme-jane.
-
-Normal Image
-
-This is an image in static/image folder.
-
-![This is an image in `static/image` folder.](/image/example.jpg)
-">
+<meta itemprop="name" content="使用P6Spy格式化SQL输出">
+<meta itemprop="description" content="引言 在使用mybatis过程中，原生输出的SQL是带？的，在需要复制到其他地方执行的时候，需要一个一个参数进行替换，如：select * from user where">
 
 
-<meta itemprop="datePublished" content="2018-03-03T16:01:23&#43;08:00" />
-<meta itemprop="dateModified" content="2018-03-04T16:01:23&#43;08:00" />
-<meta itemprop="wordCount" content="527">
+<meta itemprop="datePublished" content="2018-01-01T16:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2018-03-07T16:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="1806">
 
 
 
-<meta itemprop="keywords" content="preview,image,shortcodes,tag-7," />
+<meta itemprop="keywords" content="preview,shortcodes,tag-6," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Image Preview"/>
-<meta name="twitter:description" content="Thanks for liwenyip/hugo-easy-gallery &amp; Zebradil · Pull Request #48 .
-
-Now, we could use {{&lt; gallery &gt;}} shortcode in hugo-theme-jane.
-
-Normal Image
-
-This is an image in static/image folder.
-
-![This is an image in `static/image` folder.](/image/example.jpg)
-"/>
+<meta name="twitter:title" content="使用P6Spy格式化SQL输出"/>
+<meta name="twitter:description" content="引言 在使用mybatis过程中，原生输出的SQL是带？的，在需要复制到其他地方执行的时候，需要一个一个参数进行替换，如：select * from user where"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -392,11 +362,11 @@ This is an image in static/image folder.
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Image Preview</h1>
+      <h1 class="post-title">使用P6Spy格式化SQL输出</h1>
       
       <div class="post-meta">
-        <time datetime="2018-03-03" class="post-time">
-          2018-03-03
+        <time datetime="2018-01-01" class="post-time">
+          2018-01-01
         </time>
         <div class="post-category">
             <a href="https://xiehuading.github.io/categories/docs/"> docs </a>
@@ -423,18 +393,11 @@ This is an image in static/image folder.
 <ul>
 <li>
 <ul>
-<li><a href="#normal-image">Normal Image</a></li>
-<li><a href="#figure-shortcode"><code>{{&lt; figure &gt;}}</code> shortcode</a>
-<ul>
-<li><a href="#figure-image-with-title">figure image with title</a></li>
-<li><a href="#figure-image-with-caption">figure image with caption</a></li>
-<li><a href="#more-figure-shortcode-usage">more <code>{{&lt; figure &gt;}}</code> shortcode usage</a></li>
-</ul></li>
-<li><a href="#gallery-shortcode"><code>{{&lt; gallery &gt;}}</code> shortcode</a>
-<ul>
-<li><a href="#simple-gallery">simple gallery</a></li>
-<li><a href="#to-specify-individual-image-files">To specify individual image files</a></li>
-</ul></li>
+<li><a href="#引言">引言</a></li>
+<li><a href="#版本">版本</a></li>
+<li><a href="#原理">原理</a></li>
+<li><a href="#使用步骤">使用步骤</a></li>
+<li><a href="#附录">附录</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -443,114 +406,210 @@ This is an image in static/image folder.
 
     
     <div class="post-content">
-      <p>Thanks for <a href="https://github.com/liwenyip/hugo-easy-gallery">liwenyip/hugo-easy-gallery</a> &amp; <a href="https://github.com/xianmin/hugo-theme-jane/pull/48">Zebradil · Pull Request #48</a> .</p>
+      
 
-<p>Now, we could use <code>{{&lt; gallery &gt;}}</code> shortcode in hugo-theme-jane.</p>
+<h2 id="引言">引言</h2>
 
-<h2 id="normal-image">Normal Image</h2>
+<p>在使用<code>mybatis</code>过程中，原生输出的SQL是带？的，在需要复制到其他地方执行的时候，需要一个一个参数进行替换，如：<code>select * from user where id=?</code>，而使用<code>p6spy</code>后，可以帮助格式化输出SQL到控制台，<code>select * from user where id=6</code>。类似的还有<code>log4jdbc</code>。</p>
 
-<p>This is an image in <code>static/image</code> folder.</p>
-
-<pre><code class="language-markdown">![This is an image in `static/image` folder.](/image/example.jpg)
-</code></pre>
-
-<h2 id="figure-shortcode"><code>{{&lt; figure &gt;}}</code> shortcode</h2>
-
-<h3 id="figure-image-with-title">figure image with title</h3>
-
-<pre><code>{{&lt; figure src=&quot;/image/example.jpg&quot; title=&quot;figure image with title&quot; &gt;}}
-</code></pre>
-
-<h3 id="figure-image-with-caption">figure image with caption</h3>
-
-<pre><code>{{&lt; figure src=&quot;/image/example.jpg&quot; caption=&quot;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&quot; &gt;}}
-</code></pre>
-
-<h3 id="more-figure-shortcode-usage">more <code>{{&lt; figure &gt;}}</code> shortcode usage</h3>
-
-<p>Specifying your image files:</p>
+<h2 id="版本">版本</h2>
 
 <ul>
-<li><code>{{&lt; figure src=&quot;thumb.jpg&quot; link=&quot;image.jpg&quot; &gt;}}</code> will use <code>thumb.jpg</code> for thumbnail and <code>image.jpg</code> for lightbox</li>
-<li><code>{{&lt; figure src=&quot;image.jpg&quot; &gt;}}</code> or <code>{{&lt; figure link=&quot;image.jpg&quot; &gt;}}</code> will use <code>image.jpg</code> for both thumbnail and lightbox</li>
-<li><code>{{&lt; figure link=&quot;image.jpg&quot; thumb=&quot;-small&quot; &gt;}}</code> will use <code>image-small.jpg</code> for thumbnail and <code>image.jpg</code> for lightbox</li>
+<li>spring-boot: 2.1.6.RELEASE</li>
+<li><code>P6Spy</code>: 3.8.0</li>
+<li>maven: 3.6.1</li>
 </ul>
 
-<p>Optional parameters:</p>
+<h2 id="原理">原理</h2>
+
+<p>P6Spy通过劫持JDBC驱动，在调用实际JDBC驱动前拦截调用的目标语，达到SQL语句日志记录的目的。<br />
+它包括P6Log和P6Outage两个模块。</p>
 
 <ul>
-<li>All the <a href="https://gohugo.io/extras/shortcodes">features/parameters</a> of Hugo&rsquo;s built-in <code>figure</code> shortcode work as normal, i.e. src, link, title, caption, class, attr (attribution), attrlink, alt</li>
-<li><code>size</code> (e.g. <code>size=&quot;1024x768&quot;</code>) pre-defines the image size for PhotoSwipe. Use this option if you don&rsquo;t want to pre-load the linked image to determine its size.</li>
-<li><code>class</code> allows you to set any custom classes you want on the <code>&lt;figure&gt;</code> tag.</li>
+<li><code>P6Log</code> 用来拦截和记录任务应用程序的 JDBC 语句<br /></li>
+<li><code>P6Outage</code> 专门用来检测和记录超过配置条件里时间的 SQL 语句</li>
 </ul>
 
-<p>Optional parameters for standalone <code>{{&lt; figure &gt;}}</code> shortcodes only (i.e. don&rsquo;t use on <code>{{&lt; figure &gt;}}</code> inside <code>{{&lt; gallery &gt;}}</code> - strange things may happen if you do):</p>
+<h2 id="使用步骤">使用步骤</h2>
 
-<ul>
-<li><code>caption-position</code> and <code>caption-effect</code> work the same as for the <code>{{&lt; gallery &gt;}}</code> shortcode (see below).</li>
-<li><code>width</code> defines the <a href="https://www.w3schools.com/cssref/pr_dim_max-width.asp"><code>max-width</code></a> of the image displayed on the page. If using a thumbnail for a standalone figure, set this equal to your thumbnail&rsquo;s native width to make the captions behave properly (or feel free to come up with a better solution and submit a pull request :-)). Also use this option if you don&rsquo;t have a thumbnail and you don&rsquo;t want the hi-res image to take up the entire width of the screen/container.</li>
-<li><code>class=&quot;no-photoswipe&quot;</code> prevents a <code>&lt;figure&gt;</code> from being loaded into PhotoSwipe. If you click on the figure you&rsquo;ll instead a good ol&rsquo; fashioned hyperlink to a bigger image (or - if you haven&rsquo;t specified a bigger image - the same one).</li>
-</ul>
+<ol>
+<li>替换<code>Jdbc driver</code>为<code>com.p6spy.engine.spy.P6SpyDriver</code></li>
+<li>修改<code>Jdbc url</code>为<code>jdbc:p6spy:xxxxxx</code></li>
+<li><code>resources</code>下创建并配置<code>spy.properties</code></li>
+</ol>
 
-<h2 id="gallery-shortcode"><code>{{&lt; gallery &gt;}}</code> shortcode</h2>
+<p>示例：</p>
 
-<h3 id="simple-gallery">simple gallery</h3>
+<p><strong>数据源配置</strong></p>
 
-<p>To specify a directory of image files:</p>
-
-<pre><code>{{&lt; gallery dir=&quot;/img/your-directory-of-images/&quot; &gt;}}
+<pre><code class="language-properties">spring.datasource.type=com.zaxxer.hikari.HikariDataSource
+spring.datasource.driver-class-name=com.p6spy.engine.spy.P6SpyDriver
+spring.datasource.url=jdbc:p6spy:mysql://127.0.0.1:3306/xhr?useUnicode=true&amp;characterEncoding=UTF-8
+spring.datasource.hikari.username=xhr
+spring.datasource.hikari.password=xhr123456
+spring.datasource.hikari.connection-test-query=select 1
 </code></pre>
 
-<ul>
-<li>The images are automatically captioned with the file name.</li>
-<li><code>[image].jpg</code> is used for the hi-res image, and <code>[image]-thumb.jpg</code> is used for the thumbnails.</li>
-<li>If <code>[image]-thumb.jpg</code> doesn&rsquo;t exist, then <code>[image].jpg</code> will be used for both hi-res and thumbnail images.</li>
-<li>The default thumbnail suffix is <code>-thumb</code>, but you can specify a different one e.g. <code>thumb=&quot;-small&quot;</code> or <code>thumb=&quot;_150x150&quot;</code>.</li>
-</ul>
+<p><strong>配置<code>spy.properties</code></strong></p>
 
-<h3 id="to-specify-individual-image-files">To specify individual image files</h3>
+<p>src/main/resources/spy.properties</p>
 
-<pre><code>{{&lt; gallery &gt;}}
-  {{&lt; figure src=&quot;image1.jpg&quot; &gt;}}
-  {{&lt; figure src=&quot;image2.jpg&quot; &gt;}}
-  {{&lt; figure src=&quot;image3.jpg&quot; &gt;}}
-{{&lt; /gallery &gt;}}
+<pre><code class="language-properties">module.log=com.p6spy.engine.logging.P6LogFactory,com.p6spy.engine.outage.P6OutageFactory
+# 自定义日志打印
+logMessageFormat=com.p6spy.engine.spy.appender.CustomLineFormat
+customLogMessageFormat=%(currentTime)|%(executionTime)ms|%(category)|connection%(connectionId)|%(sqlSingleLine)
+#logMessageFormat=org.pkaq.core.log.P6SpyLogger
+# 使用日志系统记录sql
+appender=com.p6spy.engine.spy.appender.Slf4JLogger
+## 配置记录Log例外
+excludecategories=info,debug,result,batc,resultset
+# 设置使用p6spy driver来做代理
+deregisterdrivers=true
+# 日期格式
+dateformat=yyyy-MM-dd HH:mm:ss.SSS
+# 实际驱动, 针对mysql mysql-connector-java 8.x以上，8.x以下使用com.mysql.jdbc.Driver
+driverlist=com.mysql.cj.jdbc.Driver
+# 是否开启慢SQL记录
+outagedetection=true
+# 慢SQL记录标准 秒
+outagedetectioninterval=2
 </code></pre>
 
-<p><strong>Optional parameters:</strong></p>
+<p>以上配置完成即可打印格式化SQL。</p>
 
-<ul>
-<li><code>caption-position</code> - determines the captions&rsquo; position over the image. Options:
+<p>启动项目，测试</p>
 
-<ul>
-<li><code>bottom</code> (default)</li>
-<li><code>center</code></li>
-<li><code>none</code> hides captions on the page (they will only show in PhotoSwipe)</li>
-</ul></li>
-<li><code>caption-effect</code> - determines if/how captions appear upon hover. Options:
+<p><img src="/Users/xiehuading/hugoBlog/static/images/image-20190726184912092.png" alt="image-20190726184912092" /></p>
 
-<ul>
-<li><code>slide</code> (default)</li>
-<li><code>fade</code></li>
-<li><code>none</code> (captions always visible)</li>
-</ul></li>
-<li><code>hover-effect</code> - determines if/how images change upon hover. Options:
+<p>自定义sql格式也可以使用代码方式，如下：</p>
 
-<ul>
-<li><code>zoom</code> (default)</li>
-<li><code>grow</code></li>
-<li><code>shrink</code></li>
-<li><code>slideup</code></li>
-<li><code>slidedown</code></li>
-<li><code>none</code></li>
-</ul></li>
-<li><code>hover-transition</code> - determines if/how images change upon hover. Options:
+<pre><code class="language-java">public class P6SpyLogger implements MessageFormattingStrategy {
 
-<ul>
-<li>not set - smooth transition (default)</li>
-<li><code>none</code> - hard transition</li>
-</ul></li>
-</ul>
+    @Override
+    public String formatMessage(int connectionId, String now, long elapsed, String category, String prepared, String sql) {
+        return !&quot;&quot;.equals(sql.trim()) ? &quot;[ &quot; + LocalDateTime.now() + &quot; ] --- | took &quot;
+                + elapsed + &quot;ms | &quot; + category + &quot; | connection &quot; + connectionId + &quot;\n &quot;
+                + sql + &quot;;&quot; : &quot;&quot;;
+    }
+}
+</code></pre>
+
+<p><strong>生产环境一般不需要打印SQL日志。格式化SQL会影响mybatis执行性能，生产环境使用正常的mysql驱动即可。</strong></p>
+
+<h2 id="附录">附录</h2>
+
+<p><code>spy.properties</code>详细配置说明：</p>
+
+<pre><code class="language-properties"># 指定应用的日志拦截模块,默认为com.p6spy.engine.spy.P6SpyFactory 
+#modulelist=com.p6spy.engine.spy.P6SpyFactory,com.p6spy.engine.logging.P6LogFactory,com.p6spy.engine.outage.P6OutageFactory
+
+# 真实JDBC driver , 多个以 逗号 分割 默认为空
+#driverlist=
+
+# 是否自动刷新 默认 flase
+#autoflush=false
+
+# 配置SimpleDateFormat日期格式 默认为空
+#dateformat=
+
+# 打印堆栈跟踪信息 默认flase
+#stacktrace=false
+
+# 如果 stacktrace=true，则可以指定具体的类名来进行过滤。
+#stacktraceclass=
+
+# 监测属性配置文件是否进行重新加载
+#reloadproperties=false
+
+# 属性配置文件重新加载的时间间隔，单位:秒 默认60s
+#reloadpropertiesinterval=60
+
+# 指定 Log 的 appender，取值：
+#appender=com.p6spy.engine.spy.appender.Slf4JLogger
+#appender=com.p6spy.engine.spy.appender.StdoutLogger
+#appender=com.p6spy.engine.spy.appender.FileLogger
+
+# 指定 Log 的文件名 默认 spy.log
+#logfile=spy.log
+
+# 指定是否每次是增加 Log，设置为 false 则每次都会先进行清空 默认true
+#append=true
+
+# 指定日志输出样式  默认为com.p6spy.engine.spy.appender.SingleLineFormat , 单行输出 不格式化语句
+#logMessageFormat=com.p6spy.engine.spy.appender.SingleLineFormat
+# 也可以采用  com.p6spy.engine.spy.appender.CustomLineFormat 来自定义输出样式, 默认值是%(currentTime)|%(executionTime)|%(category)|connection%(connectionId)|%(sqlSingleLine)
+# 可用的变量为:
+#   %(connectionId)            connection id
+#   %(currentTime)             当前时间
+#   %(executionTime)           执行耗时
+#   %(category)                执行分组
+#   %(effectiveSql)            提交的SQL 换行
+#   %(effectiveSqlSingleLine)  提交的SQL 不换行显示
+#   %(sql)                     执行的真实SQL语句，已替换占位
+#   %(sqlSingleLine)           执行的真实SQL语句，已替换占位 不换行显示
+#customLogMessageFormat=%(currentTime)|%(executionTime)|%(category)|connection%(connectionId)|%(sqlSingleLine)
+
+# date类型字段记录日志时使用的日期格式 默认dd-MMM-yy
+#databaseDialectDateFormat=dd-MMM-yy
+
+# boolean类型字段记录日志时使用的日期格式 默认boolean 可选值numeric
+#databaseDialectBooleanFormat=boolean
+
+# 是否通过jmx暴露属性 默认true
+#jmx=true
+
+# 如果jmx设置为true 指定通过jmx暴露属性时的前缀 默认为空
+# com.p6spy(.&lt;jmxPrefix&gt;)?:name=&lt;optionsClassName&gt;
+#jmxPrefix=
+
+# 是否显示纳秒 默认false
+#useNanoTime=false
+
+# 实际数据源 JNDI
+#realdatasource=/RealMySqlDS
+# 实际数据源 datasource class
+#realdatasourceclass=com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+
+# 实际数据源所携带的配置参数 以 k=v 方式指定 以 分号 分割
+#realdatasourceproperties=port;3306,serverName;myhost,databaseName;jbossdb,foo;bar
+
+# jndi数据源配置 
+# 设置 JNDI 数据源的 NamingContextFactory。 
+#jndicontextfactory=org.jnp.interfaces.NamingContextFactory
+# 设置 JNDI 数据源的提供者的 URL。 
+#jndicontextproviderurl=localhost:1099
+# 设置 JNDI 数据源的一些定制信息，以分号分隔。 
+#jndicontextcustom=java.naming.factory.url.pkgs;org.jboss.naming:org.jnp.interfaces
+
+# 是否开启日志过滤 默认false， 这项配置是否生效前提是配置了 include/exclude/sqlexpression
+#filter=false
+
+# 过滤 Log 时所包含的表名列表，以逗号分隔 默认为空
+#include=
+# 过滤 Log 时所排除的表名列表，以逗号分隔 默认为空
+#exclude=
+
+# 过滤 Log 时的 SQL 正则表达式名称  默认为空
+#sqlexpression=
+
+#显示指定过滤 Log 时排队的分类列表，取值: error, info, batch, debug, statement,
+#commit, rollback, result and resultset are valid values
+# (默认 info,debug,result,resultset,batch)
+#excludecategories=info,debug,result,resultset,batch
+
+# 是否过滤二进制字段
+# (default is false)
+#excludebinary=false
+
+# P6Log 模块执行时间设置，整数值 (以毫秒为单位)，只有当超过这个时间才进行记录 Log。 默认为0
+#executionThreshold=
+
+# P6Outage 模块是否记录较长时间运行的语句 默认false
+# outagedetection=true|false
+# P6Outage 模块执行时间设置，整数值 （以秒为单位)），只有当超过这个时间才进行记录 Log。 默认30s
+# outagedetectioninterval=integer time (seconds)
+</code></pre>
+
     </div>
 
     
@@ -558,12 +617,12 @@ This is an image in static/image folder.
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">文章作者</span>
-    <span class="item-content">午龙</span>
+    <span class="item-content">wulong</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2018-03-04
+      2018-03-07
       
     </span>
   </p>
@@ -581,16 +640,15 @@ This is an image in static/image folder.
     <footer class="post-footer">
       <div class="post-tags">
           <a href="https://xiehuading.github.io/tags/preview/">preview</a>
-          <a href="https://xiehuading.github.io/tags/image/">image</a>
           <a href="https://xiehuading.github.io/tags/shortcodes/">shortcodes</a>
-          <a href="https://xiehuading.github.io/tags/tag-7/">tag-7</a>
+          <a href="https://xiehuading.github.io/tags/tag-6/">tag-6</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/shortcodes-preview/">
+          <a class="prev" href="/post/jane-theme-preview/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -600,12 +658,12 @@ This is an image in static/image folder.
 </svg>
 
             </i>
-            <span class="prev-text nav-default">Shortcodes Preview</span>
+            <span class="prev-text nav-default">Jane Theme Preview</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/shortcode-notice/">
-            <span class="next-text nav-default">Shortcodes Notice Preview</span>
+          <a class="next" href="/post/shortcodes-preview/">
+            <span class="next-text nav-default">Shortcodes Preview</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
@@ -787,6 +845,13 @@ This is an image in static/image folder.
 
 <script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 
